@@ -10,13 +10,19 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Welcome">
 	<main>
 		<section class="w-full mx-auto lg:w-[740px] py-44">
-			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
+			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
 				Hey! I'm Markel 
-				<div class="flex justify-center items-center">
-					<Badge>Available</Badge>
-				</div>
+					<a
+						href="https://www.linkedin.com/in/markel-cortajarena/"
+						target="_blank"
+						rel="noopener"
+						class="flex justify-center items-center">
+							<Badge>Available</Badge>
+					</a>
 			</h1>
-			<h2>More than 3 years of experience as an RPA developer, and Full Stack Developer in training.</h2>
+			<h2 class="text-xl opacity-80">
+				More than 3 years of experience as an RPA developer, and Full Stack Developer in training.
+			</h2>
 		</section>
 	</main>
 </Layout>
