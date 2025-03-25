@@ -14,7 +14,7 @@ import SectionContainer from '../components/SectionContainer.astro';
 	description="Meet Markel, an RPA Developer with over 3 years of experience and a Full Stack Developer in training."
 >
 	<main>
-		<SectionContainer>
+		<SectionContainer class="py-44 pb-24">
 			<img
 				class="rounded-full size-12 mb-4"
 				src="https://i.pinimg.com/736x/38/1d/6e/381d6edab2cb8693e04e9e5923c20ec6.jpg"
@@ -22,18 +22,18 @@ import SectionContainer from '../components/SectionContainer.astro';
 			/>
 			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
 				Hey! I'm Markel 
-					<a
-						href="https://www.linkedin.com/in/markel-cortajarena/"
-						target="_blank"
-						rel="noopener"
-						class="flex justify-center items-center">
-							<Badge>Available</Badge>
-					</a>
+				<a
+					href="https://www.linkedin.com/in/markel-cortajarena/"
+					target="_blank"
+					rel="noopener"
+					class="flex justify-center items-center">
+					<Badge>Available</Badge>
+				</a>
 			</h1>
 			<h2 class="text-2xl text-wrap">
 				<span class="text-green-200/90">More than 3 years of experience</span> as an <span class="text-yellow-200/90">RPA Developer</span>, and <span class="text-yellow-200/90">Full Stack Developer</span> in training.
 			</h2>
-
+		
 			<nav class="flex gap-x-4 mt-8">
 				<SocialPill href="https://www.linkedin.com/in/markel-cortajarena/">
 					<LinkedInIcon class="size-6" />
@@ -47,8 +47,9 @@ import SectionContainer from '../components/SectionContainer.astro';
 					<MailIcon class="size-6" />
 					Mail
 				</SocialPill>
-		</SectionContainer>
-
+			</nav>
+		</SectionContainer> <!-- Ahora está cerrado correctamente -->
+		
 		<SectionContainer>
 			<Experience />
 		</SectionContainer>
