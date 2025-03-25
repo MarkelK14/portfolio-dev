@@ -6,6 +6,7 @@ import LinkedInIcon from '../components/icons/LinkedIn.astro';
 import GitHubIcon from '../components/icons/GitHub.astro';
 import MailIcon from '../components/icons/Mail.astro';
 import Experience from '../components/Experience.astro';
+import SectionContainer from '../components/SectionContainer.astro';
 ---
 
 <Layout
@@ -13,7 +14,7 @@ import Experience from '../components/Experience.astro';
 	description="Meet Markel, an RPA Developer with over 3 years of experience and a Full Stack Developer in training."
 >
 	<main>
-		<section class="w-full mx-auto lg:w-[740px] py-44">
+		<SectionContainer>
 			<img
 				class="rounded-full size-12 mb-4"
 				src="https://i.pinimg.com/736x/38/1d/6e/381d6edab2cb8693e04e9e5923c20ec6.jpg"
@@ -46,10 +47,10 @@ import Experience from '../components/Experience.astro';
 					<MailIcon class="size-6" />
 					Mail
 				</SocialPill>
-		</section>
+		</SectionContainer>
 
-		<section>
+		<SectionContainer>
 			<Experience />
-		</section>
+		</SectionContainer>
 	</main>
 </Layout>
