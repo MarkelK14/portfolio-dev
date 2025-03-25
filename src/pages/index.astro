@@ -4,13 +4,17 @@ import Badge from '../components/Badge.astro';
 import SocialPill from '../components/SocialPill.astro';
 import LinkedInIcon from '../components/icons/LinkedIn.astro';
 import GitHubIcon from '../components/icons/GitHub.astro';
+import MailIcon from '../components/icons/Mail.astro';
 ---
 
-<Layout title="Welcome">
+<Layout
+	title="Markel's Portfolio - RPA Developer and Web Developer in training"
+	description="Meet Markel, an RPA Developer with over 3 years of experience and a Full Stack Developer in training."
+>
 	<main>
 		<section class="w-full mx-auto lg:w-[740px] py-44">
 			<img
-				class="rounded-full w-12 h-12 mb-4"
+				class="roun</Layout>d</Layout>ed-full w-12 h-12 mb-4"
 				src="https://i.pinimg.com/736x/38/1d/6e/381d6edab2cb8693e04e9e5923c20ec6.jpg"
 				alt="Web picture"
 			/>
@@ -28,7 +32,7 @@ import GitHubIcon from '../components/icons/GitHub.astro';
 				<span class="text-green-200/90">More than 3 years of experience</span> as an <span class="text-yellow-200/90">RPA Developer</span>, and <span class="text-yellow-200/90">Full Stack Developer</span> in training.
 			</h2>
 
-			<nav class="flex flex-wrap gap-4 mt-8">
+			<nav class="flex gap-x-4 mt-8">
 				<SocialPill href="https://www.linkedin.com/in/markel-cortajarena/">
 					<LinkedInIcon class="size-6" />
 					LinkedIn
@@ -36,6 +40,10 @@ import GitHubIcon from '../components/icons/GitHub.astro';
 				<SocialPill href="https://github.com/MarkelK14">
 					<GitHubIcon class="size-6" />
 					GitHub
+				</SocialPill>
+				<SocialPill href="mailto:markelkortajarena@gmail.com">
+					<MailIcon class="size-6" />
+					Mail
 				</SocialPill>
 
 		</section>
