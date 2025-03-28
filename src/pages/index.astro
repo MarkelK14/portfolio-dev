@@ -6,6 +6,7 @@ import LinkedInIcon from '../components/icons/LinkedIn.astro';
 import GitHubIcon from '../components/icons/GitHub.astro';
 import MailIcon from '../components/icons/Mail.astro';
 import BriefCaseIcon from '../components/icons/Briefcase.astro';
+import CodeIcon from '../components/icons/Code.astro';
 import Experience from '../components/Experience.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 ---
@@ -57,6 +58,14 @@ import SectionContainer from '../components/SectionContainer.astro';
 				Work Experience
 			</h2>
 			<Experience />
+		</SectionContainer>
+
+		<SectionContainer id="projects">
+			<h2 class="text-2xl font-semi-bold mb-6 flex gap-x-3 items-center">
+				<CodeIcon class="size-7" />
+				Projects
+			</h2>
+			
 		</SectionContainer>
 	</main>
 </Layout>
