@@ -8,36 +8,20 @@ const PROJECTS = [
         image: "/projects/svgl.webp",
         tags: ["Next.js", "Tailwind CSS", "React"]
     }
-    // ,{
-    //     title: "E-commerce Store",
-    //     description: "An online store built with modern web technologies.",
-    //     link: "https://mystore.com",
-    //     github: "https://github.com/username/ecommerce-store",
-    //     image: "https://placehold.co/300x200",
-    //     tags: ["React", "Node.js", "MongoDB"]
-    // },
-    // {
-    //     title: "Blog Platform",
-    //     description: "A blogging platform with markdown support and user authentication.",
-    //     link: "https://myblog.com",
-    //     github: "https://github.com/username/blog-platform",
-    //     image: "https://placehold.co/300x200",
-    //     tags: ["Next.js", "TypeScript", "Tailwind CSS"]
-    // }
 ]
 ---
 
 {
     PROJECTS.map(({title, description, tags, image}) => (
         <article>
-            <h3>{title}</h3>
-            <p>{description}</p>
+            <h3 class="text-2xl font-semibold text-yellow-300 mb-2">{title}</h3>
+            <p class="text-lg mb-4 text-pretty">{description}</p>
             <ul>
                 {tags.map(tag => (
                     <li>{tag}</li>
                 ))}
             </ul>
-            <img src={image} alt={`Screenshot of the project ${title}`} />
+            <img class="rounded shadow-2xl shadow-white/10" src={image} alt={`Screenshot of the project ${title}`} />
         </article>
     ))
 }
