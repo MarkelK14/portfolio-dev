@@ -12,16 +12,30 @@ const { description, title } = Astro.props
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>{title}</title>
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		
-		<title>{title}</title>
 		<meta name="description" content={description} />
-		<meta name="viewport" content="width=device-width" />
-		
-		<meta property="og:title" content={title} />
-		<meta property="og:description" content={description} />
-		<meta property="og:image" content="/og-image.png" />
+
+		<!-- HTML Meta Tags -->
+		<title>Markel's Portfolio - RPA Developer and Web Developer in training</title>
+		<meta name="description" content="Meet Markel, an RPA Developer with over 3 years of experience and a Full Stack Developer in training.">
+
+		<!-- Open Graph & Facebook Meta Tags -->
+		<meta property="og:url" content="https://markelcn.com">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Markel's Portfolio - RPA Developer and Web Developer in training">
+		<meta property="og:description" content="Meet Markel, an RPA Developer with over 3 years of experience and a Full Stack Developer in training.">
+		<meta property="og:image" content="https://markelcn.com/og-image.jpg">
+
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta property="twitter:domain" content="markelcn.com">
+		<meta property="twitter:url" content="https://markelcn.com">
+		<meta name="twitter:title" content="Markel's Portfolio - RPA Developer and Web Developer in training">
+		<meta name="twitter:description" content="Meet Markel, an RPA Developer with over 3 years of experience and a Full Stack Developer in training.">
+		<meta name="twitter:image" content="https://markelcn.com/og-image.jpg">
 	</head>
 	<body class="relative">
 		<!-- <div
