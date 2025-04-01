@@ -1,3 +1,19 @@
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+
+@layer utilities {
+  header nav {
+    box-shadow: 0px 4px 6px #0000001a; /* Sombra de tamaño grande */
+    border: 1px solid #ffffff1a; /* Borde blanco con opacidad del 10% */
+    backdrop-filter: blur(8px); /* Desenfoque de fondo */
+    outline: none;
+    
+    &:where(.dark, .dark *) {
+      color: theme("colors.gray.200") !important;
+      background-color: theme("colors.gray.800") !important;
+
+    }
+  }
+}
