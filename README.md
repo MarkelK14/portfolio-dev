@@ -1,48 +1,122 @@
-# Astro Starter Kit: Basics
+# Portfolio Website
 
-```sh
-npm create astro@latest -- --template basics
+This is a personal portfolio website built to showcase projects, experience, and skills. The website is designed to be responsive, accessible, and visually appealing, using modern web development tools and best practices.
+
+## Index
+
+- [Portfolio Website](#portfolio-website)
+  - [Index](#index)
+  - [Features](#features)
+  - [Tech Stack](#tech-stack)
+  - [Project Structure](#project-structure)
+  - [Installation](#installation)
+  - [Build](#build)
+  - [License](#license)
+
+## Features
+
+- **Responsive Design**: Optimized for all screen sizes, from mobile to desktop.
+- **Dark Mode**: Includes a theme toggle to switch between light and dark modes.
+- **Projects Section**: Highlights key projects with descriptions, tags, and links to code or live previews.
+- **Experience Section**: Showcases professional experience with detailed descriptions.
+- **Social Links**: Easy access to LinkedIn, GitHub, and email.
+
+## Tech Stack
+
+- **Astro**: A modern static site generator for fast and optimized websites.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **TypeScript**: For type-safe JavaScript development.
+
+## Project Structure
+
+The project follows a modular structure for better maintainability:
+
 ```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
+portfolio-dev/         # Root directory of the project
+├── astro.config.mjs   # Astro configuration file
+├── package.json       # Project dependencies and scripts
+├── README.md          # Project documentation
+├── tsconfig.json      # TypeScript configuration file
+├── public/            # Publicly accessible files
+│   ├── favicon.svg    # Website favicon
+│   ├── og-image.jpg   # Open Graph image for social sharing
+│   └── projects/      # Project-specific assets
+│       ├── password-generator.webp
+│       └── svgl.webp
+├── src/               # Source files
+│   ├── assets/        # Static assets like images and icons
+│   │   ├── astro.svg
+│   │   └── background.svg
+│   ├── components/    # Reusable UI components
+│   │   ├── Badge.astro
+│   │   ├── Experience.astro
+│   │   ├── ExperienceItem.astro
+│   │   ├── Footer.astro
+│   │   ├── Header.astro
+│   │   ├── LinkButton.astro
+│   │   ├── Projects.astro
+│   │   ├── SectionContainer.astro
+│   │   ├── SocialPill.astro
+│   │   ├── ThemeToggle.astro
+│   │   └── icons/     # Icon components
+│   │       ├── Briefcase.astro
+│   │       ├── Code.astro
+│   │       ├── CSS.astro
+│   │       ├── GitHub.astro
+│   │       ├── HTML.astro
+│   │       ├── JavaScript.astro
+│   │       ├── Link.astro
+│   │       ├── LinkedIn.astro
+│   │       ├── Mail.astro
+│   │       ├── Moon.astro
+│   │       ├── NextJS.astro
+│   │       ├── ProfileCheck.astro
+│   │       ├── Sun.astro
+│   │       ├── System.astro
+│   │       └── Tailwind.astro
+│   ├── layouts/       # Layout components for pages
 │   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   ├── pages/         # Website pages
+│   │   └── index.astro
+│   └── styles/        # Global and component-specific styles
+│       └── global.css
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Installation
 
-## 🧞 Commands
+To run this project locally, follow these steps:
 
-All commands are run from the root of the project, from a terminal:
+1. Clone the repository:
+   ```bash
+   git clone git@github.com:MarkelK14/portfolio-dev.git
+   ```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+2. Navigate to the project directory:
+   ```bash
+   cd portfolio-dev
+   ```
 
-## 👀 Want to learn more?
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and navigate to `http://localhost:4321`.
+
+## Build
+
+To build the project for production:
+```bash
+npm run build
+```
+
+The output will be in the `dist/` directory.
+
+## License
+
+This project is for personal use and is not licensed for commercial purposes.
