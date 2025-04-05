@@ -4,30 +4,33 @@ import ExperienceItem from "./ExperienceItem.astro";
 const EXPERIENCE = [
     {
         date: 'May 2024 - Present',
-        title: 'RPA Developer (Packaged App Development Analyst) - Accenture',
+        title: 'RPA Developer (Packaged App Development Analyst)',
+        company: "Accenture",
         description: 'RPA Developer in the Scottish Power Improvement project, responsible for developing and maintaining automations using Microsoft SQL Server and SSIS, creating bots with Selenium and SAP Scripting in VB.NET and C#, querying data in Oracle Database, and enhancing desktop applications in C#.',
         // link: 'https://www.accenture.com/us-en/careers/jobdetails?id=R00000000',
     },
     {
         date: 'August 2022 - May 2024',
-        title: 'RPA Developer (Application Developmen Associate) - Accenture',
+        title: 'RPA Developer (Application Developmen Associate)',
+        company: "Accenture",
         description: 'RPA Developer in the Scottish Power Improvement project, responsible for developing and maintaining automations using Microsoft SQL Server and SSIS, creating bots with Selenium and SAP Scripting in VB.NET and C#, querying data in Oracle Database, and enhancing desktop applications in C#.',
     },
     {
         date: 'March 2022 - August 2022',
-        title: 'RPA Developer (Intern) - Accenture',
+        title: 'RPA Developer (Intern)',
+        company: "Accenture",
         description: 'RPA Developer in the Scottish Power Improvement project, responsible for developing and maintaining automations using Microsoft SQL Server and SSIS, creating bots with Selenium and SAP Scripting in VB.NET and C#, querying data in Oracle Database, and enhancing desktop applications in C#.',
     },
 ];
 ---
 
-<ol class="relative border-s border-gray-200 ml-3">      
+<ol class="relative mt-16">
     {
-        EXPERIENCE.map(experience => (
-        <li class="mb-10 ms-4">
-            <ExperienceItem {...experience} />
+      EXPERIENCE.map((experience) => (
+        <li class="">
+          <ExperienceItem {...experience} />
         </li>
-        ))
+      ))
     }
-</ol>
+  </ol>
 
