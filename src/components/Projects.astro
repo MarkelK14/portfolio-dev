@@ -10,6 +10,8 @@ import JavaScript from "./icons/JavaScript.astro";
 import GitHubIcon from "./icons/GitHub.astro";
 import LinkIcon from "./icons/Link.astro";
 import LinkButton from "./LinkButton.astro";
+import Angular from "./icons/Angular.astro";
+import MySQL from "./icons/MySQL.astro";
 
 const TAGS = {
   NEXT: {
@@ -52,6 +54,16 @@ const TAGS = {
     class: "bg-[#60A249] text-white",
     icon: NodeJS,
   },
+  ANGULAR: {
+    name: "Angular",
+    class: "bg-[#F44336] text-white",
+    icon: Angular,
+  },
+  MYSQL: {
+    name: "MySQL",
+    class: "bg-[#0059A2] text-white",
+    icon: MySQL,
+  },
 };
 
 const PROJECTS = [
@@ -81,6 +93,15 @@ const PROJECTS = [
     github: "https://github.com/MarkelK14/bilbaocam-telegram-bot",
     image: "/projects/bilbaocam-telegram-bot.webp",
     tags: [TAGS.NODEJS, TAGS.EXPRESS, TAGS.MONGODB],
+  },
+  {
+    title: "Rutina Go",
+    description:
+      "A fitness web application that allows users to create and manage workout routines, track progress, and stay motivated.",
+    link: "https://rutinago.netlify.app/home",
+    github: "https://github.com/orgs/unir-grupo6/repositories",
+    image: "/projects/rutina-go.webp",
+    tags: [TAGS.ANGULAR, TAGS.EXPRESS, TAGS.NEXT, TAGS.MYSQL, TAGS.TAILWIND],
   },
 ];
 ---
