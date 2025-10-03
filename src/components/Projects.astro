@@ -7,6 +7,7 @@ import Express from "./icons/Express.astro";
 import MongoDB from "./icons/MongoDB.astro";
 import NodeJS from "./icons/NodeJS.astro";
 import JavaScript from "./icons/JavaScript.astro";
+import TypeScript from "./icons/TypeScript.astro";
 import GitHubIcon from "./icons/GitHub.astro";
 import LinkIcon from "./icons/Link.astro";
 import LinkButton from "./LinkButton.astro";
@@ -38,6 +39,11 @@ const TAGS = {
     name: "JavaScript",
     class: "bg-[#F3D024] text-black",
     icon: JavaScript,
+  },
+  TYPESCRIPT: {
+    name: "TypeScript",
+    class: "bg-[#3d87ff] text-white",
+    icon: TypeScript,
   },
   EXPRESS: {
     name: "Express.js",
@@ -102,6 +108,15 @@ const PROJECTS = [
     github: "https://github.com/orgs/unir-grupo6/repositories",
     image: "/projects/rutina-go.webp",
     tags: [TAGS.ANGULAR, TAGS.EXPRESS, TAGS.NODEJS, TAGS.MYSQL, TAGS.TAILWIND],
+  },
+  {
+    title: "VAM Test",
+    description:
+      "A fitness web application that allows users to create and manage workout routines, track progress, and stay motivated.",
+    link: "https://vamtest.netlify.app/",
+    github: "https://github.com/MarkelK14/vam-test",
+    image: "/projects/vam-test.webp",
+    tags: [TAGS.ANGULAR, TAGS.TAILWIND, TAGS.TYPESCRIPT],
   },
 ];
 ---
